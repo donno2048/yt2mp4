@@ -4,3 +4,11 @@ yt2mp4.egg-info
 */__pycache__
 *.log
 *.mp4
+*.webm
+*.mkv
+*.flv
+*.wmv
+*.avi
+*.mov
+*.m4v
+*.mp3

@@ -1,3 +1,11 @@
 from . import download
-def main(): download(input("https://www.youtube.com/watch?v="))
-if __name__ == '__main__': main()
+def mp4(): download(input("https://www.youtube.com/watch?v="), outname='out.mp4')
+def webm(): download(input("https://www.youtube.com/watch?v="), outname='out.webm')
+def mkv(): download(input("https://www.youtube.com/watch?v="), outname='out.mkv')
+def flv(): download(input("https://www.youtube.com/watch?v="), outname='out.flv')
+def wmv(): download(input("https://www.youtube.com/watch?v="), outname='out.wmv')
+def avi(): download(input("https://www.youtube.com/watch?v="), outname='out.avi')
+def mov(): download(input("https://www.youtube.com/watch?v="), outname='out.mov')
+def m4v(): download(input("https://www.youtube.com/watch?v="), outname='out.m4v')
+def mp3(): download(input("https://www.youtube.com/watch?v="), outname='out.mp3')
+if __name__ == '__main__': mp4()

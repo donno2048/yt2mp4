@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='yt2mp4',
-    version='1.0.0',
+    version='1.0.1',
     license='MIT',
     author='Elisha Hollander',
     author_email='just4now666666@gmail.com',
@@ -18,5 +18,15 @@ setup(
     packages=find_packages(),
     install_requires=['selenium==4.1.0', 'selenium-wire==4.5.6', 'moviepy==1.0.3'],
     classifiers=['Programming Language :: Python :: 3'],
-    entry_points={ 'console_scripts': [ 'yt2mp4=yt2mp4.__main__:main' ] }
+    entry_points={ 'console_scripts': [
+        'yt2mp4=yt2mp4.__main__:mp4',
+        'yt2webm=yt2mp4.__main__:webm',
+        'yt2mkv=yt2mp4.__main__:mkv',
+        'yt2flv=yt2mp4.__main__:flv',
+        'yt2wmv=yt2mp4.__main__:wmv',
+        'yt2avi=yt2mp4.__main__:avi',
+        'yt2movie=yt2mp4.__main__:mov',
+        'yt2m4v=yt2mp4.__main__:m4v',
+        'yt2mp3=yt2mp4.__main__:mp3'
+    ] }
 )
