@@ -1,3 +1,5 @@
+from json import loads
+from urllib.request import urlopen
 from seleniumwire.webdriver import Firefox
 from selenium.webdriver.firefox.webdriver import Options
 from moviepy.editor import VideoFileClip, AudioFileClip
@@ -24,3 +26,5 @@ def download(id, outname='output.mp4', fps=60):
         AudioFileClip(aud).write_audiofile(outname)
     else:
         raise Exception('Unknown file extension')
+def download_playlist(id, api_key, extension='mp4', fps=60):
+    for video, name in map(lambda data: (data["snippet"]["resourceId"]["videoId"], data["snippet"]["title"]), loads(urlopen("https://www.googleapis.com/youtube/v3/playlistItems?playlistId=%s&part=snippet&maxResults=50&key=%s" % (id[id.find("list=") + 5 if id.find("list=") > 0 else 0:], api_key)).read())["items"]): download(video, name + "." + extension, fps=fps)
