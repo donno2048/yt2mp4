@@ -36,7 +36,12 @@ pip3 install git+https://github.com/donno2048/yt2mp4
 from yt2mp4 import download
 download("dQw4w9WgXcQ", outname='output.mp4') # dowload video from https://www.youtube.com/watch?v=dQw4w9WgXcQ and name it output.mp4
 # will also work:
+# download("youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
+# download("youtu.be/dQw4w9WgXcQ")
+# download("www.youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
+# download("music.youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
 # download("https://www.youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
+# download("https://music.youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
 # download("https://youtu.be/dQw4w9WgXcQ")
 ```
 
