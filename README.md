@@ -7,7 +7,10 @@ Download YouTube videos and playlists as MP4 files (and other formats)
 ### Linux (Debian)
 
 ```sh
-sudo apt install firefox-geckodriver -y
+sudo apt install wget -y
+wget https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz
+sudo tar xvzf geckodriver-v0.30.0-linux64.tar.gz -C /usr/bin/
+chmod +x /usr/bin/geckodriver
 ```
 
 ### Other
