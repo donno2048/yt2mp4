@@ -16,7 +16,7 @@ setup(
     },
     python_requires='>=3.0',
     packages=find_packages(),
-    install_requires=['selenium==4.1.0', 'selenium-wire==4.5.6', 'moviepy==1.0.3'],
+    install_requires=['selenium>=4.1.0', 'selenium-wire>=4.5.6', 'moviepy>=1.0.3'],
     classifiers=['Programming Language :: Python :: 3'],
     entry_points={ 'console_scripts': [
         'yt2mp4=yt2mp4.__main__:mp4',
