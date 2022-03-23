@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
     name='yt2mp4',
-    version='1.0.4',
+    version='1.0.5',
     license='MIT',
     author='Elisha Hollander',
     author_email='just4now666666@gmail.com',

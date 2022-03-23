@@ -40,6 +40,7 @@ pip3 install git+https://github.com/donno2048/yt2mp4
 from yt2mp4 import download
 download("dQw4w9WgXcQ", outname='output.mp4') # dowload video from https://www.youtube.com/watch?v=dQw4w9WgXcQ and name it output.mp4
 # will also work:
+# download("dQw4w9WgXcQ", outname='output.mp4', binary_path=path) # use a different binary path
 # download("youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
 # download("youtu.be/dQw4w9WgXcQ")
 # download("www.youtube.com/watch?v=dQw4w9WgXcQ", output="output.mov")
@@ -86,7 +87,8 @@ download_playlist(id, api_key)
                     - PLAYLIST_ID
  - the second argument is the API key
  - the third is the extension, the default value is 'mp4'
- - the last one is the fps, the default value is 60
+ - the fourth one is the fps, the default value is 60
+ - the last one is the binary path to the geckodriver
 '''
 ```
 
