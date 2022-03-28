@@ -36,6 +36,8 @@ pip3 install git+https://github.com/donno2048/yt2mp4
 
 ### In Python
 
+You might have to run it a couple of times to download the video if you get a `KeyError`.
+
 ```py
 from yt2mp4 import download
 download("dQw4w9WgXcQ", outname='output.mp4') # dowload video from https://www.youtube.com/watch?v=dQw4w9WgXcQ and name it output.mp4
